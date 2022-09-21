@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+
+    background-color: #FFFFFF;
+}
+a{text-decoration: none;}
+img{max-width: 100%;}
+h1{font-size: 2.4rem;}
+h2{font-size: 1.8rem;}
+
+p{
+
+    &.subtitle{
+        font-size: 1.2rem;
+    }
+}
+.--btn{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 16px 35px;
+    font-size: .9rem;
+    font-weight: bold;
+    background-color: #777777;
+    border-radius: 4px;
+
+    &.--btn-primary{
+        background-color: #212121;
+        color: #FFFFFF;
+    }
+
+    &.--btn-secondary{
+        background-color: #FFFFFF;
+        color: #212121;
+    }
+
+    &.--btn-sm{
+        padding: 8px 24px;
+    }
+
+    &.--btn-cta{
+        animation: blink .5s none 0s infinite alternate;
+    }
+
+    @keyframes blink {
+        from{opacity: .5;scale: 1;}
+        to{opacity: 1;scale:1.05}
+    }
+}
+header{
+    background-color: #212121;
+    padding: 15px 0;
+
+    .--header_container{
+        max-width: calc(min(1200px, 90%));
+        margin: auto;
+        
+        .--socials{
+            max-width: 300px;
+            margin-left: auto;
+            text-align: right;
+            a{
+                margin: 0 12px;
+            }
+            i{
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+#root{
+    max-width: calc(min(1200px, 90%));
+    margin: auto;
+
+    section{
+
+        &#hero{
+            padding: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+
+            .--hero_right{
+
+                p{
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
+            }
+
+        }
+
+        &#about{
+            padding: 50px 0;
+
+            p{
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+            }
+        }
+
+        &#projects{
+            padding: 50px 0;
+
+            .--projects-grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 60px;
+                grid-row-gap: 60px;
+
+                .--project-item{
+
+
+                    &:hover{
+                        .--project-img{
+                            filter: grayscale(0);
+                        }
+                    }
+                    .--project-img{
+                        filter: grayscale(1);
+                        transition: filter .25s ease-out;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .--project-meta{
+                        margin: 16px 0;
+
+                        h4{
+                            font-size: 1.15rem;
+                        }
+
+                        ul{
+                            list-style-type: none;
+
+                            li{
+                                display: grid;
+                                grid-template-columns: 24px 1fr;
+                                grid-gap: 8px;
+                                margin: 8px 0;
+                                align-items: center;
+
+                                i{
+                                    text-align: center;
+                                    display: inline-block;
+                                }
+                                p{
+                                    margin: 0;
+                                    display: inline-block;
+
+                                    &.--error{
+                                        font-style: italic;
+                                        color: red;
+                                    }
+                                }
+
+                                a{
+                                    text-decoration: underline;
+                                    color: #212121;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            &#hero{
+                grid-template-columns: 1fr;
+            }
+
+            &#projects{
+
+                .--projects-grid{
+                    grid-template-columns: 1fr;
+                    grid-gap: 75px;
+                }
+            }
+        }
+    }
+}
+
+
+

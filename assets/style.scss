@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +7,15 @@
 }
 
 body{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Inter', sans-serif;
 
     background-color: #FFFFFF;
 }
 a{text-decoration: none;}
 img{max-width: 100%;}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
 h1{font-size: 2.4rem;}
 h2{font-size: 1.8rem;}
 
@@ -20,6 +23,41 @@ p{
 
     &.subtitle{
         font-size: 1.2rem;
+    }
+}
+
+.--badge{
+    font-size: .9rem;
+    padding: 3px 9px;
+    border-radius: 8px;
+    background-color: #f4f7fa;
+    color: #212121;
+    font-weight: 600;
+    border: 1px solid transparent;
+
+    &.--badge-primary{
+        background-color: #ffb084;
+    }
+    &.--badge-secondary {
+        background-color: #f6d0f4;
+    }
+    &.--badge-tertiary {
+        background-color: #d4effc;
+    
+    }&.--badge-changed {
+        background-color: #B2DFDB;
+    }&.--badge-five {
+        background-color: #FFCDD2;
+    }&.--badge-six {
+        background-color: #D1C4E9;
+    }&.--badge-seven {
+        background-color: #FFF9C4;
+    }
+    &.--badge-outline{
+        background-color: transparent;
+        border-color: #0f172a;
+        color: #0f172a;
+
     }
 }
 .--btn{
@@ -37,7 +75,7 @@ p{
     }
 
     &.--btn-secondary{
-        background-color: #FFFFFF;
+        background-color: #f4f7fa;
         color: #212121;
     }
 
@@ -45,9 +83,6 @@ p{
         padding: 8px 24px;
     }
 
-    &.--btn-cta{
-        animation: blink .5s none 0s infinite alternate;
-    }
 
     @keyframes blink {
         from{opacity: .5;scale: 1;}
@@ -55,13 +90,25 @@ p{
     }
 }
 header{
-    background-color: #212121;
     padding: 15px 0;
 
     .--header_container{
         max-width: calc(min(1200px, 90%));
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         margin: auto;
-        
+        .--logo{
+            display: grid;
+            grid-template-columns: 24px 1fr;
+            grid-gap: 8px;
+            align-items: center;
+            h1{
+                color: #212121;
+                line-height: 2rem;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+        }
         .--socials{
             max-width: 300px;
             margin-left: auto;
@@ -70,7 +117,7 @@ header{
                 margin: 0 12px;
             }
             i{
-                color: #FFFFFF;
+                color: #212121;
             }
         }
     }
@@ -108,25 +155,33 @@ header{
 
         &#projects{
             padding: 50px 0;
-
+            .--section-title{
+                margin-bottom: 24px;
+            }
             .--projects-grid{
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 grid-column-gap: 60px;
                 grid-row-gap: 60px;
+                margin-bottom: 72px;
+
+                &.--highlights{
+                    grid-template-columns: repeat(2, 1fr);
+                }
 
                 .--project-item{
 
 
                     &:hover{
                         .--project-img{
-                            filter: grayscale(0);
                         }
                     }
                     .--project-img{
-                        filter: grayscale(1);
                         transition: filter .25s ease-out;
-
+                        border-radius: 16px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
                         img{
                             width: 100%;
                         }
@@ -146,7 +201,7 @@ header{
                                 display: grid;
                                 grid-template-columns: 24px 1fr;
                                 grid-gap: 8px;
-                                margin: 8px 0;
+                                margin: 16px 0;
                                 align-items: center;
 
                                 i{

@@ -18,7 +18,14 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{font-size: 2.4rem;}
 h2{font-size: 1.8rem;}
+.--hide-mobile{
+    display: inline-block;
 
+    @media screen and (max-width: 768px) {
+        display: none !important;
+        
+    }
+}
 p{
 
     &.subtitle{
@@ -97,6 +104,7 @@ header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: auto;
+        align-items: center;
         .--logo{
             display: grid;
             grid-template-columns: 24px 1fr;
@@ -165,8 +173,15 @@ header{
                 grid-row-gap: 60px;
                 margin-bottom: 72px;
 
+                @media screen and (max-width: 768px){
+                    grid-template-columns: 1fr;
+                }
+
                 &.--highlights{
                     grid-template-columns: repeat(2, 1fr);
+                    @media screen and (max-width: 768px) {
+                            grid-template-columns: 1fr;
+                        }
                 }
 
                 .--project-item{

@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-  <b>Fredi Yanto</b>
+  <b>Fred</b>
 </h1>
 
 <p align="center">

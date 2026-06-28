@@ -1,1 +1,11 @@
-theme: jekyll-theme-tactile
+# Static site — no Jekyll theme needed. HTML/CSS/JS are self-contained.
+# theme: jekyll-theme-tactile
+
+# Exclude source files from the built site
+exclude:
+  - assets/style.scss
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

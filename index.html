@@ -1,600 +1,716 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fred - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frediant — Fullstack Developer & CRO Specialist. Building high-conversion digital experiences.">
+  <title>Frediant — Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/webp">
+  <!-- Fonts: Syne (display), DM Sans (body), JetBrains Mono (code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
-    <!-- Style -->
-    <link rel="stylesheet" href="assets/css/style.css?ver=1.0">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css?ver=2.0">
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="--header_container">
-            <div class="--logo">
-                <img src="assets/img/logo.webp" alt="">
-                <h1>Frediant</h1>
-            </div>
-            <div class="--socials">
-                <a href="https://www.linkedin.com/in/aldyfrediant/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://gitlab.com/aldyfrediant"><i class="fa-brands fa-gitlab"></i></a>
-                <a href="mailto:dyfrediant@skiff.com" class="--btn --btn-secondary --hide-mobile">Contact Me</a>
-            </div>
-        </div>
-    </header>
-    <div id="root">
-        <section id="projects">
-            <h2 class="--section-title">Highlights</h2>
-            <div class="--projects-grid --highlights">
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/fpt.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Felicia Putri Tjiasaka</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="https://feliciaputritjiasaka.com">https://feliciaputritjiasaka.com</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/fpt-2.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Felicia Putri Tjiasaka V2</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">React</span>
-                                    <span class="--badge --badge-outline">NextJS</span>
-                                    <span class="--badge --badge-outline">T3</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p>Coming soon</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
-            <h2 class="--section-title">Latest Projects</h2>
-            <div class="--projects-grid">
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/sushiking.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Sushi King Malaysia</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-seven">API</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Clevertap</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="https://sushi-king.com/">https://sushi-king.com/</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/innisfree.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Innisfree Malaysia</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-changed">CRO</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Google Optimize</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="hhttps://www.innisfree.my/">hhttps://www.innisfree.my/</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/tokio-marine.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Tokio Marine Vietnam</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-seven">CRM</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Mailchimp</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="https://tokiomarineonline.com.vn/">https://tokiomarineonline.com.vn/</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/enfa.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Enfagrow</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-changed">CRO</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Google Optimize</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="https://store.enfa.co.id/">https://store.enfa.co.id/</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/noel.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Noel Gifts</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-changed">CRO</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Google Optimize</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="https://www.noelgifts.com/">https://www.noelgifts.com/</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/unhcr.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>UNHCR Thailand</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-changed">CRO</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Google Optimize</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a
-                                        href="https://www.unhcr.or.th/donate/refugees">https://www.unhcr.or.th/donate/refugees</a>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/wvi.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Wahana Visi Indonesia</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-changed">CRO</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Google Optimize</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="//wahanavisi.org">https://wahanavisi.org</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/ampg.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Angkatan Muda Partai Golkar (AMPG)</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link-slash"></i>
-                                <p class="--error">Internal use only</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/carikuliah.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Cari Kuliah</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="//carikuliah.com">https://carikuliah.com</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="--section-title">Archived Projects</h2>
-            <div class="--projects-grid">
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/peruri.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Peruri Sign</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Adobe XD</span>
-                                    <span class="--badge --badge-outline">Figma</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="https://sign.peruri.co.id/">https://sign.peruri.co.id/</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/sscorner.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>SSCorner</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-six">Frontend</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link"></i>
-                                <p><a href="https://sscorner.id">https://sscorner.id</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/lofity.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Lofity</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link-slash"></i>
-                                <p class="--error">No longer exists</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/love-bonito.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Love, Bonito - CSR Rating System</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link-slash"></i>
-                                <p class="--error">Internal use only</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/love-bonito.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Love, Bonito - Asset Management</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link-slash"></i>
-                                <p class="--error">Internal use only</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/love-bonito.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Love, Bonito - Return Receipt Generator</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link-slash"></i>
-                                <p class="--error">Internal use only</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/love-bonito.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Love, Bonito - Career Page</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                    <span class="--badge --badge-five">DevOps</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Laravel</span>
-                                    <span class="--badge --badge-outline">jQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link-slash"></i>
-                                <p class="--error">No longer exists</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="--project-item">
-                    <div class="--project-img">
-                        <img src="assets/img/love-bonito.webp" alt="">
-                    </div>
-                    <div class="--project-meta">
-                        <h4>Love, Bonito - Blog</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-bolt"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-primary">Fullstack</span>
-                                    <span class="--badge --badge-secondary">UI</span>
-                                    <span class="--badge --badge-tertiary">UX</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-microchip"></i>
-                                <div class="--badges">
-                                    <span class="--badge --badge-outline">Wordpress</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-link-slash"></i>
-                                <p class="--error">No longer exists</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Frediant Home">
+        <span class="logo-bracket">&lt;</span>
+        Frediant
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="header-actions" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/aldyfrediant/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://gitlab.com/aldyfrediant" class="social-link" target="_blank" rel="noopener" aria-label="GitLab">
+          <i class="fa-brands fa-gitlab"></i>
+        </a>
+        <a href="mailto:dyfrediant@skiff.com" class="btn btn-primary hide-mobile">Contact Me</a>
+      </nav>
     </div>
-</body>
+  </header>
 
+  <main>
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+      <div class="container hero-content">
+        <p class="hero-greeting" data-animate="fade-right">Hello, I'm</p>
+        <h1 class="hero-name" data-animate="fade-up">
+          <span class="hero-name-line"><span>Fredi</span></span>
+          <span class="hero-name-line"><span class="highlight">Yanto</span></span>
+        </h1>
+        <p class="hero-tagline" data-animate="fade-up">
+          Fullstack Developer &amp; <span class="highlight">CRO Specialist</span> — I build high-conversion digital products, from architecture to pixel-perfect UI.
+        </p>
+        <div class="hero-cta-group" data-animate="fade-up">
+          <a href="#projects" class="btn btn-primary">
+            View Work
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M8 13l4-4M8 13l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="mailto:dyfrediant@skiff.com" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span>SCROLL</span>
+      </div>
+    </section>
+
+    <!-- ═══ STATS ═══ -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-animate="scale-in">
+            <div class="stat-number" data-count="7">0</div>
+            <p class="stat-label">Years Experience</p>
+          </div>
+          <div class="stat-item" data-animate="scale-in">
+            <div class="stat-number" data-count="50">0</div>
+            <p class="stat-label">Projects Shipped</p>
+          </div>
+          <div class="stat-item" data-animate="scale-in">
+            <div class="stat-number" data-count="15">0</div>
+            <p class="stat-label">Happy Clients</p>
+          </div>
+          <div class="stat-item" data-animate="scale-in">
+            <div class="stat-number" data-count="99" data-suffix="%">0</div>
+            <p class="stat-label">Client Retention</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ HIGHLIGHTS ═══ -->
+    <section class="section" id="highlights">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-label">Featured Work</span>
+            <h2 class="section-title">High<span class="section-title-accent">lights</span></h2>
+          </div>
+          <p class="section-subtitle">Selected projects that showcase fullstack development, UI/UX design, and conversion optimization.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <!-- Highlight 1: FPT -->
+          <a href="https://feliciaputritjiasaka.com" class="highlight-card" target="_blank" rel="noopener" data-animate="fade-up">
+            <div class="highlight-card-image">
+              <img src="assets/img/fpt.webp" alt="Felicia Putri Tjiasaka website screenshot" loading="lazy">
+            </div>
+            <div class="highlight-card-body">
+              <h3>Felicia Putri Tjiasaka</h3>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">Laravel</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <div class="highlight-card-link">
+                <span>feliciaputritjiasaka.com</span>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- Highlight 2: FPT V2 -->
+          <div class="highlight-card" data-animate="fade-up">
+            <div class="highlight-card-image">
+              <img src="assets/img/fpt-2.webp" alt="Felicia Putri Tjiasaka V2 website screenshot" loading="lazy">
+            </div>
+            <div class="highlight-card-body">
+              <h3>FPT V2</h3>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">React</span>
+                <span class="badge badge-tech">Next.js</span>
+                <span class="badge badge-tech">T3</span>
+              </div>
+              <span class="highlight-card-link">
+                <span>Coming Soon</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ LATEST PROJECTS ═══ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Latest <span class="section-title-accent">Projects</span></h2>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Sushi King -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/sushiking.webp" alt="Sushi King Malaysia website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Sushi King Malaysia</h4>
+              <div class="badge-group">
+                <span class="badge badge-api">API</span>
+                <span class="badge badge-tech">Clevertap</span>
+              </div>
+              <a href="https://sushi-king.com/" class="project-card-link" target="_blank" rel="noopener">
+                sushi-king.com <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Innisfree -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/innisfree.webp" alt="Innisfree Malaysia website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Innisfree Malaysia</h4>
+              <div class="badge-group">
+                <span class="badge badge-cro">CRO</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-tech">Google Optimize</span>
+              </div>
+              <a href="https://www.innisfree.my/" class="project-card-link" target="_blank" rel="noopener">
+                innisfree.my <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tokio Marine -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/tokio-marine.webp" alt="Tokio Marine Vietnam website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Tokio Marine Vietnam</h4>
+              <div class="badge-group">
+                <span class="badge badge-crm">CRM</span>
+                <span class="badge badge-tech">Mailchimp</span>
+              </div>
+              <a href="https://tokiomarineonline.com.vn/" class="project-card-link" target="_blank" rel="noopener">
+                tokiomarineonline.com.vn <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Enfagrow -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/enfa.webp" alt="Enfagrow website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Enfagrow</h4>
+              <div class="badge-group">
+                <span class="badge badge-cro">CRO</span>
+                <span class="badge badge-tech">Google Optimize</span>
+              </div>
+              <a href="https://store.enfa.co.id/" class="project-card-link" target="_blank" rel="noopener">
+                store.enfa.co.id <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Noel Gifts -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/noel.webp" alt="Noel Gifts website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Noel Gifts</h4>
+              <div class="badge-group">
+                <span class="badge badge-cro">CRO</span>
+                <span class="badge badge-tech">Google Optimize</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <a href="https://www.noelgifts.com/" class="project-card-link" target="_blank" rel="noopener">
+                noelgifts.com <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- UNHCR -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/unhcr.webp" alt="UNHCR Thailand donation page screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>UNHCR Thailand</h4>
+              <div class="badge-group">
+                <span class="badge badge-cro">CRO</span>
+                <span class="badge badge-tech">Google Optimize</span>
+              </div>
+              <a href="https://www.unhcr.or.th/donate/refugees" class="project-card-link" target="_blank" rel="noopener">
+                unhcr.or.th <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- WVI -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/wvi.webp" alt="Wahana Visi Indonesia website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Wahana Visi Indonesia</h4>
+              <div class="badge-group">
+                <span class="badge badge-cro">CRO</span>
+                <span class="badge badge-tech">Google Optimize</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <a href="https://wahanavisi.org" class="project-card-link" target="_blank" rel="noopener">
+                wahanavisi.org <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- AMPG -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/ampg.webp" alt="AMPG website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>AMPG</h4>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">Laravel</span>
+              </div>
+              <span class="project-card-link error">
+                <i class="fas fa-link-slash"></i> Internal Use Only
+              </span>
+            </div>
+          </div>
+
+          <!-- Cari Kuliah -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/carikuliah.webp" alt="Cari Kuliah website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Cari Kuliah</h4>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">Laravel</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <a href="https://carikuliah.com" class="project-card-link" target="_blank" rel="noopener">
+                carikuliah.com <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ARCHIVED PROJECTS ═══ -->
+    <section class="section" id="archived">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-label">Archive</span>
+            <h2 class="section-title">Past <span class="section-title-accent">Work</span></h2>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Peruri Sign -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/peruri.webp" alt="Peruri Sign website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Peruri Sign</h4>
+              <div class="badge-group">
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-tech">Adobe XD</span>
+                <span class="badge badge-tech">Figma</span>
+              </div>
+              <a href="https://sign.peruri.co.id/" class="project-card-link" target="_blank" rel="noopener">
+                sign.peruri.co.id <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SSCorner -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/sscorner.webp" alt="SSCorner website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>SSCorner</h4>
+              <div class="badge-group">
+                <span class="badge badge-frontend">Frontend</span>
+                <span class="badge badge-tech">Laravel</span>
+              </div>
+              <a href="https://sscorner.id" class="project-card-link" target="_blank" rel="noopener">
+                sscorner.id <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Lofity -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/lofity.webp" alt="Lofity website screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Lofity</h4>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">Laravel</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <span class="project-card-link error">
+                <i class="fas fa-link-slash"></i> No Longer Exists
+              </span>
+            </div>
+          </div>
+
+          <!-- Love Bonito CSR -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/love-bonito.webp" alt="Love Bonito CSR Rating System screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Love, Bonito — CSR Rating</h4>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">Laravel</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <span class="project-card-link error">
+                <i class="fas fa-link-slash"></i> Internal Use Only
+              </span>
+            </div>
+          </div>
+
+          <!-- Love Bonito Asset Mgmt -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/love-bonito.webp" alt="Love Bonito Asset Management screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Love, Bonito — Asset Mgmt</h4>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">Laravel</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <span class="project-card-link error">
+                <i class="fas fa-link-slash"></i> Internal Use Only
+              </span>
+            </div>
+          </div>
+
+          <!-- Love Bonito Return Receipt -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/love-bonito.webp" alt="Love Bonito Return Receipt Generator screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Love, Bonito — Return Receipt</h4>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">Laravel</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <span class="project-card-link error">
+                <i class="fas fa-link-slash"></i> Internal Use Only
+              </span>
+            </div>
+          </div>
+
+          <!-- Love Bonito Career -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/love-bonito.webp" alt="Love Bonito Career Page screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Love, Bonito — Career Page</h4>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-devops">DevOps</span>
+                <span class="badge badge-tech">Laravel</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <span class="project-card-link error">
+                <i class="fas fa-link-slash"></i> No Longer Exists
+              </span>
+            </div>
+          </div>
+
+          <!-- Love Bonito Blog -->
+          <div class="project-card" data-animate="fade-up">
+            <div class="project-card-image">
+              <img src="assets/img/love-bonito.webp" alt="Love Bonito Blog screenshot" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h4>Love, Bonito — Blog</h4>
+              <div class="badge-group">
+                <span class="badge badge-fullstack">Fullstack</span>
+                <span class="badge badge-ui">UI</span>
+                <span class="badge badge-ux">UX</span>
+                <span class="badge badge-tech">Wordpress</span>
+              </div>
+              <span class="project-card-link error">
+                <i class="fas fa-link-slash"></i> No Longer Exists
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FOOTER / TERMINAL ═══ -->
+    <footer class="site-footer">
+      <div class="container">
+        <!-- Terminal -->
+        <div class="footer-terminal" data-animate="fade-up">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">frediant@portfolio ~ %</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="terminal-prompt">$</span> whoami</div>
+            <div><span class="terminal-output">Fredi Yanto — Fullstack Developer & CRO Specialist</span></div>
+            <div style="margin-top: 12px;"><span class="terminal-prompt">$</span> cat ./stack.txt</div>
+            <div><span class="terminal-output">Laravel · React · Next.js · TypeScript · jQuery · WordPress</span></div>
+            <div><span class="terminal-output">Google Optimize · Clevertap · Mailchimp · Figma · Adobe XD</span></div>
+            <div style="margin-top: 12px;"><span class="terminal-prompt">$</span> echo $mission</div>
+            <div><span class="terminal-output">Building digital products that convert. Pixel by pixel.</span></div>
+            <div style="margin-top: 12px;"><span class="terminal-prompt">$</span> <span class="terminal-cursor"></span></div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="footer-cta" data-animate="fade-up">
+          <h3>Let's build something <span class="section-title-accent">great</span> together.</h3>
+          <a href="mailto:dyfrediant@skiff.com" class="btn btn-primary" style="margin-top: var(--space-6);">
+            Start a Conversation
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <span>&copy; 2026 Frediant. Built with <span style="color: var(--accent-mint);">♥</span> and caffeine.</span>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/aldyfrediant/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://gitlab.com/aldyfrediant" target="_blank" rel="noopener">GitLab</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ═══ GSAP ANIMATIONS ═══ -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Register ScrollTrigger
+      gsap.registerPlugin(ScrollTrigger);
+
+      // ── Header scroll effect ──
+      const header = document.getElementById('header');
+      ScrollTrigger.create({
+        start: 'top -80',
+        onEnter: () => header.classList.add('scrolled'),
+        onLeaveBack: () => header.classList.remove('scrolled'),
+      });
+
+      // ── Fade-up reveals ──
+      gsap.utils.toArray('[data-animate="fade-up"]').forEach((el, i) => {
+        gsap.fromTo(el,
+          { y: 60, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            delay: i * 0.08,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 90%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+      });
+
+      // ── Fade-right reveals ──
+      gsap.utils.toArray('[data-animate="fade-right"]').forEach((el) => {
+        gsap.fromTo(el,
+          { x: -60, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 90%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+      });
+
+      // ── Scale-in reveals ──
+      gsap.utils.toArray('[data-animate="scale-in"]').forEach((el, i) => {
+        gsap.fromTo(el,
+          { scale: 0.85, opacity: 0 },
+          {
+            scale: 1,
+            opacity: 1,
+            duration: 0.7,
+            delay: i * 0.1,
+            ease: 'back.out(1.4)',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 90%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+      });
+
+      // ── Counter animations ──
+      gsap.utils.toArray('[data-count]').forEach((el) => {
+        const target = parseInt(el.getAttribute('data-count'), 10);
+        const suffix = el.getAttribute('data-suffix') || '';
+        const obj = { val: 0 };
+
+        ScrollTrigger.create({
+          trigger: el,
+          start: 'top 85%',
+          onEnter: () => {
+            gsap.to(obj, {
+              val: target,
+              duration: 2,
+              ease: 'power2.out',
+              onUpdate: () => {
+                el.textContent = Math.floor(obj.val) + suffix;
+              },
+            });
+          },
+          once: true,
+        });
+      });
+
+      // ── Hero name stagger (runs on load, no scroll trigger needed) ──
+      gsap.fromTo('.hero-name-line span',
+        { y: '100%', opacity: 0 },
+        {
+          y: '0%',
+          opacity: 1,
+          duration: 1,
+          stagger: 0.15,
+          ease: 'power4.out',
+          delay: 0.3,
+        }
+      );
+
+      // ── Hero greeting ──
+      gsap.fromTo('.hero-greeting',
+        { x: -30, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 0.1 }
+      );
+
+      // ── Hero tagline ──
+      gsap.fromTo('.hero-tagline',
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 0.8 }
+      );
+
+      // ── Hero CTAs ──
+      gsap.fromTo('.hero-cta-group',
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 1.0 }
+      );
+
+      // ── Scroll indicator fade ──
+      gsap.to('.hero-scroll-indicator', {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: '#stats',
+          start: 'top 80%',
+          scrub: true,
+        },
+      });
+
+      // ── Project card hover tilt (subtle) ──
+      document.querySelectorAll('.project-card, .highlight-card').forEach((card) => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = (y - centerY) / centerY * -3;
+          const rotateY = (x - centerX) / centerX * 3;
+
+          gsap.to(card, {
+            rotateX: rotateX,
+            rotateY: rotateY,
+            duration: 0.5,
+            ease: 'power2.out',
+          });
+        });
+
+        card.addEventListener('mouseleave', () => {
+          gsap.to(card, {
+            rotateX: 0,
+            rotateY: 0,
+            duration: 0.5,
+            ease: 'power2.out',
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
 </html>

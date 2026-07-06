@@ -221,7 +221,7 @@
       <a href="https://gitlab.com/aldyfrediant" class="social-link" target="_blank" rel="noopener" aria-label="GitLab">
         <i class="fa-brands fa-gitlab"></i>
       </a>
-      <a href="mailto:dyfrediant@skiff.com" class="btn btn-primary hide-mobile">Contact Me</a>
+      <a href="mailto:aldyfrediant@gmail.com" class="btn btn-primary hide-mobile">Contact Me</a>
     </nav>
   </div>
 </header>
@@ -242,7 +242,7 @@
           View Work
           <i class="fas fa-arrow-down"></i>
         </a>
-        <a href="mailto:dyfrediant@skiff.com" class="btn btn-secondary">Get In Touch</a>
+        <a href="mailto:aldyfrediant@gmail.com" class="btn btn-secondary">Get In Touch</a>
       </div>
     </div>
     <div class="hero-scroll-indicator" aria-hidden="true">
@@ -356,7 +356,7 @@
       <!-- CTA -->
       <div class="footer-cta" data-animate="fade-up">
         <h3>Let's build something <span class="section-title-accent">great</span> together.</h3>
-        <a href="mailto:dyfrediant@skiff.com" class="btn btn-primary" style="margin-top: var(--space-6);">
+        <a href="mailto:aldyfrediant@gmail.com" class="btn btn-primary" style="margin-top: var(--space-6);">
           Start a Conversation
           <i class="fas fa-paper-plane"></i>
         </a>

@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/aldyfrediant/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://gitlab.com/aldyfrediant"><img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab"></a>
-  <a href="mailto:dyfrediant@skiff.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="mailto:aldyfrediant@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://dyfrediant.github.io"><img src="https://img.shields.io/badge/Portfolio-00FF88?style=for-the-badge&logo=safari&logoColor=black" alt="Portfolio"></a>
 </p>
 
@@ -95,7 +95,7 @@
   <p>
     <i>Building digital products that convert. Pixel by pixel.</i>
   </p>
-  <a href="mailto:dyfrediant@skiff.com">
+  <a href="mailto:aldyfrediant@gmail.com">
     <img src="https://img.shields.io/badge/Let's%20Work%20Together-00FF88?style=for-the-badge" alt="Let's Work Together">
   </a>
 </div>
